@@ -1,0 +1,22 @@
+version : "3.8"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: amdin
+      MONGO_INITDB_DATABASE: coinbase
+    restart: always
+
+volumes:
+  mongodb_data:
+
+networks:
+  mongo:
