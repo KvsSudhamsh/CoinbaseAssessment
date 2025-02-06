@@ -9,10 +9,6 @@ services:
       - mongodb_data:/data/db
     networks:
       - mongo
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: amdin
-      MONGO_INITDB_DATABASE: coinbase
     restart: always
 
 volumes:
