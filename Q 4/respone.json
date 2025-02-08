@@ -1,0 +1,15 @@
+{
+    "data" : [
+        {
+            "item_id" : "item_01",
+            "parent_id" : "abc123",
+            "name" : "Item Name",
+            "created_At" : "2025-02-04 18:20:24,756"
+        }
+    ],
+    "metadata" : {
+        "total_items" : 15,
+        "limits" : 10,
+        "offset" :0
+    }
+}
