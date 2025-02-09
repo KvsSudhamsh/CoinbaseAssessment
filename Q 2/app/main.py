@@ -3,7 +3,7 @@ from routers import router
 from auth import auth_router
 from cache import cache_router
 
-app = FastAPI(title="Coinbase Backend Integration")
+app = FastAPI()
 
 # Include modular routers
 app.include_router(router, prefix="/data")
