@@ -7,8 +7,8 @@ router = APIRouter()
 
 # Sample Data
 data_store = [
-    {"id": 1, "name": "BTC", "description": "Bitcoin", "created_at": datetime.now()},
-    {"id": 2, "name": "ETH", "description": "Ethereum", "created_at": datetime.now()},
+    {"id": 1, "name": "BTC", "description": "Bitcoin", "created_at": str(datetime.now())},
+    {"id": 2, "name": "ETH", "description": "Ethereum", "created_at": str(datetime.now())},
 ]
 
 @router.get("/", response_model=List[Item])
